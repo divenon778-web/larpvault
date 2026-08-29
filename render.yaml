@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: larpvault
+    env: python
+    plan: free
+    buildCommand: ""
+    startCommand: python serve.py
+    healthCheckPath: /
+    autoDeploy: false
